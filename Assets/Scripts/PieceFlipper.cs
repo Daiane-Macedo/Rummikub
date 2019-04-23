@@ -4,30 +4,30 @@ using UnityEngine;
 
 public class PieceFlipper : MonoBehaviour
 {
-   SpriteRenderer spriteRenderer;
-   PieceModel pieceModel;
+   	SpriteRenderer spriteRenderer;
+   	PieceModel pieceModel;
 
-   public AnimationCurve scaleCurve;
-   public float duration = 0.5f; 
+	public AnimationCurve scaleCurve;
+	public float duration = 0.5f; 
 
-   void Awake()
-   {
-   		spriteRenderer = GetComponent<SpriteRenderer>();
+	void Awake()
+	{
+		spriteRenderer = GetComponent<SpriteRenderer>();
    		pieceModel = GetComponent<PieceModel>();
-   }
+	}
 
-   public void FlipPiece(Sprite startImage, Sprite endImage, int pieceIndex)
-   {
+	public void FlipPiece(Sprite startImage, Sprite endImage, int pieceIndex)
+	{
    		StopCoroutine(Flip(startImage, endImage, pieceIndex));
    		StartCoroutine(Flip(startImage, endImage, pieceIndex));
-   }
+	}
 
-   IEnumerator Flip(Sprite startImage, Sprite endImage, int pieceIndex)
-   {
-   		spriteRenderer.sprite = startImage;
+	IEnumerator Flip(Sprite startImage, Sprite endImage, int pieceIndex)
+	{
+		spriteRenderer.sprite = startImage;
 
    		float time = 0f;
-   		while (time<=1f)
+   		while (time <= 1f)
    		{
    			float scale = scaleCurve.Evaluate(time);
    			time = time + Time.deltaTime / duration;
@@ -36,10 +36,11 @@ public class PieceFlipper : MonoBehaviour
    			localScale.x = scale;
    			transform.localScale = localScale;
 
-   			if(time >= 0.5)
+   			if (time >= 0.5f)
    			{
    				spriteRenderer.sprite = endImage;
    			}
+
    			yield return new WaitForFixedUpdate();
    		}
 
@@ -52,5 +53,5 @@ public class PieceFlipper : MonoBehaviour
    			pieceModel.pieceIndex = pieceIndex;
    			pieceModel.ToggleFace(true);
    		}
-   }
+	}
 }

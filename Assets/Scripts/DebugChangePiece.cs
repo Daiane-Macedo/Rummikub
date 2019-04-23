@@ -6,9 +6,8 @@ public class DebugChangePiece : MonoBehaviour
 {
 	PieceFlipper flipper;
 	PieceModel pieceModel;
-	int pieceIndex = -1;
+	int pieceIndex = 0;
 	public GameObject piece;
-
     void Awake()
     {
     	pieceModel = piece.GetComponent<PieceModel>();
@@ -19,14 +18,13 @@ public class DebugChangePiece : MonoBehaviour
     {
     	if (GUI.Button(new Rect(10, 10, 100, 28), "Click"))
     	{
-    		if(pieceIndex >= pieceModel.faces.Length-1)
+    		if(pieceIndex >= pieceModel.faces.Length)
     		{
-    			pieceIndex = -1;
-    			flipper.FlipPiece(pieceModel.faces[pieceModel.faces.Length - 1], pieceModel.pieceBack, pieceIndex);
+    			pieceIndex = 0;
+    			flipper.FlipPiece(pieceModel.faces[pieceModel.faces.Length - 1], pieceModel.pieceBack, -1);
     		}
     		else
     		{
-    			pieceIndex++;
     			if(pieceIndex > 0)
     			{
     				flipper.FlipPiece(pieceModel.faces[pieceIndex - 1], pieceModel.faces[pieceIndex], pieceIndex);
@@ -35,6 +33,7 @@ public class DebugChangePiece : MonoBehaviour
     			{
     				flipper.FlipPiece(pieceModel.pieceBack, pieceModel.faces[pieceIndex], pieceIndex);
     			}
+    			pieceIndex++;
     		}
     	}
     }

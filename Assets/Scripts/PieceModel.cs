@@ -9,7 +9,10 @@ public class PieceModel : MonoBehaviour
     public Sprite[] faces;
     public Sprite pieceBack;
 
+
     public int pieceIndex;
+	public int value;
+	public string color;
 
     public void ToggleFace(bool showFace)
     {
@@ -22,6 +25,7 @@ public class PieceModel : MonoBehaviour
     		spriteRenderer.sprite = pieceBack;
     	}
     }
+
 
     void Awake()
     {
