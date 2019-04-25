@@ -77,13 +77,12 @@ public class PieceStack : MonoBehaviour
     {
         pieces.Clear();
 
-        for (int i = 0; i < 52; i++)
+        for (int i = 0; i < 104; i++)
         {
             pieces.Add(i);
-            
         }
 
-        Shuffle(pieces, pieces.Count);
+        //Shuffle(pieces, pieces.Count);
         
     }
 
@@ -109,9 +108,9 @@ public class PieceStack : MonoBehaviour
 
                 }
             }
-            pieces.Add(52);
-            pieces.Add(53);
-            Shuffle(pieces, pieces.Count);
+            pieces.Add(104);
+            pieces.Add(105);
+            //Shuffle(pieces, pieces.Count);
         }
     }
 }

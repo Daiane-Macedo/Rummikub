@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4A76FB9C-82DD-1C0A-670C-33B5752E24C2}</ProjectGuid>
+    <ProjectGuid>{FA0DD95F-5F74-2208-5BE4-87C5E442D41B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,7 +55,6 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\DebugChangePiece.cs" />
      <Compile Include="Assets\Scripts\DebugDealer.cs" />
-     <Compile Include="Assets\Scripts\PieceAtributes.cs" />
      <Compile Include="Assets\Scripts\PieceFlipper.cs" />
      <Compile Include="Assets\Scripts\PieceModel.cs" />
      <Compile Include="Assets\Scripts\PieceMovement.cs" />
@@ -63,21 +62,20 @@
      <Compile Include="Assets\Scripts\PieceRemovedEventArgs.cs" />
      <Compile Include="Assets\Scripts\PieceStack.cs" />
      <Compile Include="Assets\Scripts\PieceStackView.cs" />
-     <Compile Include="Assets\Scripts\PieceStatus.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/mathe/Desktop/Unity/Rummikub-master/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PackageManagerUI.Editor">
- <HintPath>C:/Users/mathe/Desktop/Unity/Rummikub-master/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+ <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/mathe/Desktop/Unity/Rummikub-master/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/mathe/Desktop/Unity/Rummikub-master/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/mathe/Desktop/Unity/Rummikub-master/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -281,13 +279,13 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.13f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/mathe/Desktop/Unity/Rummikub-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/mathe/Desktop/Unity/Rummikub-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/mathe/Desktop/Unity/Rummikub-master/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/PackageCache/com.unity.analytics@3.2.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2018.3.13f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

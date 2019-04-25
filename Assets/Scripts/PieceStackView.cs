@@ -74,35 +74,40 @@ public class PieceStackView : MonoBehaviour
         pieceModel.pieceIndex = pieceIndex;
         pieceModel.ToggleFace(faceUp);
         
-        pieceModel.value = (pieceIndex+1)%13;
-        if (pieceModel.value == 0)
+         switch (pieceIndex/26)
         {
-            pieceModel.value = 13;
-        }
-         switch (pieceIndex/13)
-        {
-            case 0:
+            case (0):
                 pieceModel.color = "Red";
                 break;
-            case 1:
+            case (1):
                 pieceModel.color = "Black";
                 break;
-            case 2:
+            case (2):
                 pieceModel.color = "Green";
                 break;
-            case 3:
+            case (3):
                 pieceModel.color = "Yellow";
                 break;
             default:
                 pieceModel.color = "Joker";
                 break;
         }
-
-
+        if (pieceModel.color == "Joker")
+        {
+            pieceModel.value = 20;
+        }
+        else
+        {
+            pieceModel.value = ((pieceIndex/2)%13)+1;
+            if (pieceModel.value == 0)
+            {
+                pieceModel.value = 13;
+            }
+        }
+        
+            
         SpriteRenderer spriteRenderer = pieceCopy.GetComponent<SpriteRenderer>();
         spriteRenderer.sortingOrder = positionalIndex;
-
-        
 
         fetchedPieces.Add(pieceIndex, pieceCopy);
     }
