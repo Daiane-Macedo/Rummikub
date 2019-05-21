@@ -67,7 +67,7 @@ public class PieceStackView : MonoBehaviour
             return;
         }
 
-        GameObject pieceCopy = (GameObject)Instantiate(piecePrefab);
+        GameObject pieceCopy = Instantiate(piecePrefab) as GameObject;
         pieceCopy.transform.position = position;
                 
         PieceModel pieceModel = pieceCopy.GetComponent<PieceModel>();

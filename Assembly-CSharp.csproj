@@ -55,6 +55,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\DebugChangePiece.cs" />
      <Compile Include="Assets\Scripts\DebugDealer.cs" />
+     <Compile Include="Assets\Scripts\Draggable.cs" />
      <Compile Include="Assets\Scripts\PieceFlipper.cs" />
      <Compile Include="Assets\Scripts\PieceModel.cs" />
      <Compile Include="Assets\Scripts\PieceMovement.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Scripts\PieceRemovedEventArgs.cs" />
      <Compile Include="Assets\Scripts\PieceStack.cs" />
      <Compile Include="Assets\Scripts\PieceStackView.cs" />
+     <Compile Include="Assets\Scripts\Teste.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>

@@ -82,7 +82,7 @@ public class PieceStack : MonoBehaviour
             pieces.Add(i);
         }
 
-        //Shuffle(pieces, pieces.Count);
+        Shuffle(pieces, pieces.Count);
         
     }
 
@@ -110,7 +110,7 @@ public class PieceStack : MonoBehaviour
             }
             pieces.Add(104);
             pieces.Add(105);
-            //Shuffle(pieces, pieces.Count);
+            Shuffle(pieces, pieces.Count);
         }
     }
 }
