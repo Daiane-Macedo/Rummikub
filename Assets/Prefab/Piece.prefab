@@ -12,10 +12,9 @@ GameObject:
   - component: {fileID: 2998647722686232550}
   - component: {fileID: 2998647722686232551}
   - component: {fileID: 2998647722686232548}
-  - component: {fileID: 3169002182396377202}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Piece
-  m_TagString: Untagged
+  m_TagString: UIDraggable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -251,15 +250,3 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   duration: 0.5
---- !u!114 &3169002182396377202
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2998647722686232549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15a3b2c915630d64495ccd15f3dab16a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

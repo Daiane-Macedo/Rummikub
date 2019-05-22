@@ -64,6 +64,7 @@
      <Compile Include="Assets\Scripts\PieceStack.cs" />
      <Compile Include="Assets\Scripts\PieceStackView.cs" />
      <Compile Include="Assets\Scripts\Teste.cs" />
+     <Compile Include="Assets\Scripts\UIElementDragger.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/mathe/Documents/GitHub/Rummikub/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
