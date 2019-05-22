@@ -9,6 +9,9 @@ public class PieceModel : MonoBehaviour
     public Sprite[] faces;
     public Sprite pieceBack;
 
+	public PieceModel left;
+	public PieceModel right;
+
 
     public int pieceIndex;
 	public int value;
